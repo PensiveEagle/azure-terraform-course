@@ -4,8 +4,8 @@ data "azurerm_resource_group" "rg_example" {
 
 resource "azurerm_storage_account" "dlstestexamlpe001" {
   name                     = "dlstestexample001"
-  resource_group_name      = data.azurerm_resource_group.rg-example.name
-  location                 = data.azurerm_resource_group.rg-example.location
+  resource_group_name      = data.azurerm_resource_group.rg_example.name
+  location                 = data.azurerm_resource_group.rg_example.location
   account_tier             = "Standard"
   account_replication_type = "LRS"
 
