@@ -1,4 +1,4 @@
-data "azurerm_resource_group" "existing_rg" {
+data "azurerm_resource_group" "rg_example" {
   name = "rg-example"
 }
 
