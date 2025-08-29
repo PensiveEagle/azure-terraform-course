@@ -27,6 +27,10 @@ resource "azurerm_storage_account" "mystorage" {
   account_tier             = "Standard"
   account_replication_type = each.value
 
+  lifecycle {
+    prevent_destroy = true
+  }
+
   tags = {
     environment = "development"
   }
